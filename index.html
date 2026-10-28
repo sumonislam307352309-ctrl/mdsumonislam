@@ -3,11 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MD.SUMON ISLAM | Diploma Engineer</title>
+  <title>Md. Sumon Islam | Diploma Engineer in RAC & Electrical</title>
+  <meta name="description" content="Md. Sumon Islam - Diploma Engineer specializing in Refrigeration & Air Conditioning (RAC), HVAC systems, Electrical works and Electronics maintenance from Dhaka Government Polytechnic Institute." />
+  <meta name="keywords" content="Md Sumon Islam, Diploma Engineer, RAC, Refrigeration, Air Conditioning, HVAC, Electrical, Electronics, Bangladesh" />
+  <meta name="author" content="Md. Sumon Islam" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Md. Sumon Islam | Diploma Engineer in RAC & Electrical" />
+  <meta property="og:description" content="Diploma Engineer specializing in Refrigeration & Air Conditioning, HVAC, Electrical works and Electronics maintenance." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="my-photo.png" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❄️</text></svg>" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -41,22 +54,22 @@
       justify-content: space-between;
     }
     .logo {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       font-weight: 700;
-      letter-spacing: 1.2px;
+      letter-spacing: 1px;
       color: #fff;
       text-decoration: none;
     }
     .logo span { color: #00b7ff; }
     .nav-links {
       display: flex;
-      gap: 36px;
+      gap: 28px;
       list-style: none;
     }
     .nav-links a {
       color: #94a3b8;
       text-decoration: none;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       font-weight: 500;
       transition: color 0.25s;
     }
@@ -117,7 +130,7 @@
       margin-bottom: 4px;
     }
     .hero-left h1 {
-      font-size: clamp(2.6rem, 5vw, 3.8rem);
+      font-size: clamp(2.4rem, 5vw, 3.5rem);
       font-weight: 800;
       line-height: 1.08;
       margin-bottom: 12px;
@@ -139,7 +152,7 @@
       font-size: 1.02rem;
       color: #94a3b8;
       line-height: 1.65;
-      max-width: 420px;
+      max-width: 440px;
       margin-bottom: 28px;
     }
     .social-btns {
@@ -168,16 +181,21 @@
       filter: brightness(1.1);
       box-shadow: 0 6px 18px rgba(0,0,0,0.35);
     }
+    .cta-group {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
     .cta {
       display: inline-flex;
       align-items: center;
       gap: 8px;
       background: linear-gradient(135deg, #00b7ff, #0088cc);
       color: #fff;
-      padding: 13px 28px;
+      padding: 13px 26px;
       border-radius: 50px;
       font-weight: 600;
-      font-size: 0.98rem;
+      font-size: 0.95rem;
       text-decoration: none;
       box-shadow: 0 0 28px rgba(0, 183, 255, 0.45);
       transition: all 0.3s;
@@ -185,6 +203,15 @@
     .cta:hover {
       transform: translateY(-3px);
       box-shadow: 0 0 40px rgba(0, 183, 255, 0.6);
+    }
+    .cta.secondary {
+      background: transparent;
+      border: 1.5px solid rgba(0, 183, 255, 0.5);
+      box-shadow: none;
+    }
+    .cta.secondary:hover {
+      background: rgba(0, 183, 255, 0.1);
+      border-color: #00b7ff;
     }
     .hero-right {
       order: 2;
@@ -243,7 +270,7 @@
       50% { opacity: 0.9; transform: scale(1.02); }
     }
 
-    /* ========== OTHER SECTIONS ========== */
+    /* ========== SECTIONS ========== */
     section { padding: 90px 32px; }
     .section-head { text-align: center; margin-bottom: 48px; }
     .section-head h2 { font-size: 2.1rem; font-weight: 700; margin-bottom: 8px; }
@@ -251,25 +278,143 @@
     .section-head p { color: #94a3b8; font-size: 0.98rem; }
     .container { max-width: 1060px; margin: 0 auto; }
 
-    .about-grid {
+    /* About */
+    .about-text p { color: #94a3b8; margin-bottom: 16px; line-height: 1.75; font-size: 1.02rem; }
+    .about-info {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 48px;
-      align-items: center;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 28px;
     }
-    .about-text p { color: #94a3b8; margin-bottom: 14px; line-height: 1.7; font-size: 1rem; }
-    .about-info { margin-top: 22px; }
     .about-info div {
-      display: flex; gap: 12px; margin-bottom: 11px; color: #e2e8f0; font-size: 0.95rem;
+      display: flex; gap: 12px; align-items: center;
+      color: #e2e8f0; font-size: 0.95rem;
+      background: rgba(15, 23, 42, 0.5);
+      padding: 12px 16px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 183, 255, 0.08);
     }
     .about-info i { color: #00b7ff; width: 18px; }
 
-    .contact-grid {
+    /* Skills */
+    .skills-grid {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 36px;
-      max-width: 520px;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 18px;
+    }
+    .skill-card {
+      background: rgba(15, 23, 42, 0.55);
+      border: 1px solid rgba(0, 183, 255, 0.1);
+      border-radius: 14px;
+      padding: 22px 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      transition: 0.3s;
+    }
+    .skill-card:hover {
+      border-color: rgba(0, 183, 255, 0.35);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0, 183, 255, 0.1);
+    }
+    .skill-icon {
+      width: 46px; height: 46px;
+      border-radius: 12px;
+      background: rgba(0, 183, 255, 0.12);
+      color: #00b7ff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .skill-card h4 { font-size: 0.98rem; margin-bottom: 4px; }
+    .skill-card p { color: #94a3b8; font-size: 0.85rem; line-height: 1.45; }
+
+    /* Education & Experience */
+    .timeline {
+      position: relative;
+      max-width: 800px;
       margin: 0 auto;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 18px;
+      top: 0; bottom: 0;
+      width: 2px;
+      background: rgba(0, 183, 255, 0.2);
+    }
+    .timeline-item {
+      position: relative;
+      padding-left: 56px;
+      margin-bottom: 36px;
+    }
+    .timeline-item:last-child { margin-bottom: 0; }
+    .timeline-dot {
+      position: absolute;
+      left: 10px;
+      top: 6px;
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      background: #00b7ff;
+      box-shadow: 0 0 0 5px rgba(0, 183, 255, 0.2);
+    }
+    .timeline-content {
+      background: rgba(15, 23, 42, 0.55);
+      border: 1px solid rgba(0, 183, 255, 0.1);
+      border-radius: 14px;
+      padding: 22px 24px;
+    }
+    .timeline-content .year {
+      display: inline-block;
+      background: rgba(0, 183, 255, 0.15);
+      color: #00b7ff;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .timeline-content h3 { font-size: 1.1rem; margin-bottom: 4px; }
+    .timeline-content .inst { color: #00b7ff; font-size: 0.92rem; margin-bottom: 8px; }
+    .timeline-content p { color: #94a3b8; font-size: 0.9rem; line-height: 1.55; }
+
+    /* Services */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+    }
+    .service-card {
+      background: rgba(15, 23, 42, 0.55);
+      border: 1px solid rgba(0, 183, 255, 0.1);
+      border-radius: 16px;
+      padding: 32px 26px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .service-card:hover {
+      border-color: rgba(0, 183, 255, 0.35);
+      transform: translateY(-5px);
+      box-shadow: 0 12px 35px rgba(0, 183, 255, 0.12);
+    }
+    .service-icon {
+      width: 64px; height: 64px;
+      margin: 0 auto 18px;
+      border-radius: 16px;
+      background: rgba(0, 183, 255, 0.12);
+      color: #00b7ff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem;
+    }
+    .service-card h3 { font-size: 1.15rem; margin-bottom: 10px; }
+    .service-card p { color: #94a3b8; font-size: 0.92rem; line-height: 1.6; }
+
+    /* Contact */
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 40px;
+      align-items: start;
     }
     .contact-links a {
       display: flex; align-items: center; gap: 14px;
@@ -294,13 +439,200 @@
     .c-icon.fb { background: rgba(24,119,242,0.15); color: #1877f2; }
     .c-icon.ig { background: rgba(225,48,108,0.15); color: #e1306c; }
     .c-icon.wa { background: rgba(37,211,102,0.15); color: #25d366; }
+    .c-icon.tg { background: rgba(0,136,204,0.15); color: #0088cc; }
     .c-icon.mail { background: rgba(234,67,53,0.15); color: #ea4335; }
     .contact-links h4 { font-size: 0.93rem; margin-bottom: 2px; }
     .contact-links p { color: #94a3b8; font-size: 0.82rem; }
 
+    /* Contact Form Toggle */
+    .form-trigger {
+      background: rgba(15, 23, 42, 0.55);
+      border: 1px solid rgba(0, 183, 255, 0.12);
+      border-radius: 16px;
+      padding: 40px 28px;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .form-trigger:hover {
+      border-color: rgba(0, 183, 255, 0.4);
+      box-shadow: 0 10px 30px rgba(0, 183, 255, 0.12);
+      transform: translateY(-3px);
+    }
+    .form-trigger .trigger-icon {
+      width: 70px; height: 70px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      background: rgba(0, 183, 255, 0.12);
+      color: #00b7ff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.7rem;
+    }
+    .form-trigger h3 {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+    .form-trigger p {
+      color: #94a3b8;
+      font-size: 0.92rem;
+      margin-bottom: 20px;
+    }
+    .form-trigger .open-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #00b7ff, #0088cc);
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .form-trigger .open-btn:hover {
+      box-shadow: 0 6px 20px rgba(0, 183, 255, 0.4);
+    }
+
+    .contact-form-box {
+      background: rgba(15, 23, 42, 0.55);
+      border: 1px solid rgba(0, 183, 255, 0.12);
+      border-radius: 16px;
+      padding: 28px;
+      display: none;
+      animation: fadeIn 0.35s ease;
+    }
+    .contact-form-box.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .contact-form-box h3 {
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+    }
+    .contact-form-box > p {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      margin-bottom: 22px;
+    }
+    .form-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 6px;
+    }
+    .close-form {
+      background: rgba(255,255,255,0.08);
+      border: none;
+      color: #94a3b8;
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1rem;
+      display: flex; align-items: center; justify-content: center;
+      transition: 0.25s;
+    }
+    .close-form:hover {
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.88rem;
+      color: #94a3b8;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      background: rgba(3, 7, 18, 0.7);
+      border: 1px solid rgba(0, 183, 255, 0.15);
+      border-radius: 10px;
+      padding: 12px 14px;
+      color: #fff;
+      font-size: 0.95rem;
+      font-family: inherit;
+      transition: 0.25s;
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #00b7ff;
+      box-shadow: 0 0 0 3px rgba(0, 183, 255, 0.15);
+    }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+    .form-group select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%2394a3b8' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .submit-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #00b7ff, #0088cc);
+      color: #fff;
+      border: none;
+      padding: 14px;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 8px;
+    }
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 183, 255, 0.4);
+    }
+
+    /* Profile image fallback */
+    .profile-fallback {
+      position: absolute;
+      inset: 8px;
+      width: calc(100% - 16px);
+      height: calc(100% - 16px);
+      border-radius: 50%;
+      background: #0f172a;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 2;
+      color: #64748b;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    .profile-fallback i {
+      font-size: 2.2rem;
+      color: #475569;
+    }
+    .profile-img.error + .profile-fallback {
+      display: flex;
+    }
+    .profile-img.error {
+      display: none;
+    }
+
     footer {
       text-align: center;
-      padding: 26px;
+      padding: 28px;
       border-top: 1px solid rgba(0, 183, 255, 0.07);
       color: #64748b;
       font-size: 0.88rem;
@@ -316,15 +648,9 @@
       }
       .hero-right { order: 1; }
       .hero-left { order: 2; }
-      .hero-left .desc {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .social-btns { justify-content: center; }
-      .profile-box {
-        width: 250px;
-        height: 250px;
-      }
+      .hero-left .desc { margin-left: auto; margin-right: auto; }
+      .social-btns, .cta-group { justify-content: center; }
+      .profile-box { width: 250px; height: 250px; }
       .hero-glow {
         right: 50%;
         transform: translate(50%, -50%);
@@ -343,18 +669,19 @@
       }
       .nav-links.open { display: flex; }
       .hamburger { display: flex; }
+      .about-info { grid-template-columns: 1fr; }
+      .contact-wrapper { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 480px) {
       .hero { padding: 90px 18px 60px; }
       .nav-inner { padding: 0 18px; }
       .profile-box { width: 220px; height: 220px; }
-      .hero-left h1 { font-size: 2.3rem; }
-      .social-btns a {
-        padding: 8px 13px;
-        font-size: 0.82rem;
-      }
+      .hero-left h1 { font-size: 2.2rem; }
+      .social-btns a { padding: 8px 13px; font-size: 0.82rem; }
       section { padding: 70px 18px; }
+      .skills-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -367,6 +694,10 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -381,10 +712,10 @@
     <div class="hero-container">
       <div class="hero-left">
         <p class="hello">Hello, I'm</p>
-        <h1><span class="name">MD. SUMON ISLAM</span></h1>
-        <p class="role">Diploma Engineer</p>
+        <h1><span class="name">Md. Sumon Islam</span></h1>
+        <p class="role">Diploma Engineer | RAC & Electrical Specialist</p>
         <p class="desc">
-          Welcome to my personal website, where you can learn more about my skills, projects, and professional journey.
+          Passionate about Refrigeration, Air Conditioning, HVAC systems and Electrical works. Currently pursuing Diploma in Engineering and building practical expertise through real-world projects and internship.
         </p>
         <div class="social-btns">
           <a href="https://www.facebook.com/SumonOfficialPlus" target="_blank" rel="noopener" class="fb">
@@ -397,9 +728,14 @@
             <i class="fab fa-whatsapp"></i> WhatsApp
           </a>
         </div>
-        <a href="#contact" class="cta">
-          Let's Connect <i class="fas fa-arrow-right"></i>
-        </a>
+        <div class="cta-group">
+          <a href="#contact" class="cta">
+            Let's Connect <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="resume.pdf" class="cta secondary" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
       </div>
       <div class="hero-right">
         <div class="profile-box">
@@ -408,9 +744,14 @@
           <div class="ring-main"></div>
           <img
             src="my-photo.png"
-            alt="Sumon Islam"
+            alt="Md. Sumon Islam - Diploma Engineer in Refrigeration & Air Conditioning"
             class="profile-img"
+            onerror="this.classList.add('error')"
           />
+          <div class="profile-fallback">
+            <i class="fas fa-user"></i>
+            <span>No Image</span>
+          </div>
         </div>
       </div>
     </div>
@@ -423,20 +764,185 @@
         <h2>About <span>Me</span></h2>
         <p>A little more about who I am</p>
       </div>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            I'm <strong style="color:#fff">Md Sumon Islam</strong> — a Diploma Engineer specializing in Refrigeration and Air Conditioning (RAC) from Dhaka Government Polytechnic Institute, Bangladesh. I have a strong passion for HVAC systems, refrigeration technology, and energy-efficient cooling solutions. I am dedicated to applying my technical knowledge and practical skills to the engineering industry while continuously developing my expertise in modern cooling and climate control technologies.
-          </p>
-          <p>
-            My goal is to contribute to innovative, reliable, and energy-efficient engineering solutions and build a successful professional career in the HVAC and refrigeration sector.
-          </p>
-          <div class="about-info">
-            <div><i class="fas fa-user"></i> Md Sumon Islam</div>
-            <div><i class="fas fa-map-marker-alt"></i> Nilphamari, Rangpur</div>
-            <div><i class="fas fa-envelope"></i> sumonislam307352309@gmail.com</div>
-            <div><i class="fas fa-phone"></i> +8801307352309</div>
+      <div class="about-text">
+        <p>
+          I'm <strong style="color:#fff">Md. Sumon Islam</strong> — a Diploma Engineer specializing in Refrigeration and Air Conditioning (RAC) Technology from Dhaka Government Polytechnic Institute, Bangladesh. I have a strong passion for HVAC systems, refrigeration technology, energy-efficient cooling solutions, and electrical works.
+        </p>
+        <p>
+          Currently, I am in my final year (passing year 2026) and actively building hands-on experience through internship and academic projects. I am also skilled in house wiring, electrical systems, and electronics repair. My goal is to contribute to reliable and energy-efficient engineering solutions in the HVAC and electrical sector.
+        </p>
+        <div class="about-info">
+          <div><i class="fas fa-user"></i> Md. Sumon Islam</div>
+          <div><i class="fas fa-map-marker-alt"></i> Nilphamari, Rangpur</div>
+          <div><i class="fas fa-envelope"></i> sumonislam307352309@gmail.com</div>
+          <div><i class="fas fa-phone"></i> +880 1307-352309</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head">
+        <h2>My <span>Skills</span></h2>
+        <p>Technical expertise I bring to the table</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-snowflake"></i></div>
+          <div>
+            <h4>Refrigeration Systems</h4>
+            <p>Design, installation & maintenance of commercial and industrial refrigeration systems</p>
           </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-wind"></i></div>
+          <div>
+            <h4>Air Conditioning</h4>
+            <p>Split, VRF & Central AC systems — installation, servicing & troubleshooting</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+          <div>
+            <h4>HVAC Installation & Maintenance</h4>
+            <p>Complete HVAC system setup, preventive maintenance and performance optimization</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-tools"></i></div>
+          <div>
+            <h4>Troubleshooting</h4>
+            <p>Inverter & Non-inverter AC diagnosis, fault finding and repair</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+          <div>
+            <h4>Electrical Works</h4>
+            <p>House wiring, electrical installations and safety compliance</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+          <div>
+            <h4>Electronics Repair</h4>
+            <p>Diagnosis and repair of electronic components and control systems</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-certificate"></i></div>
+          <div>
+            <h4>RAC Level-1</h4>
+            <p>Currently pursuing RAC Level-1 certification for advanced practical skills</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+          <div>
+            <h4>Energy Efficient Solutions</h4>
+            <p>Focus on modern, energy-saving cooling and climate control technologies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-head">
+        <h2>Education</h2>
+        <p>My academic journey</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="year">2022 – 2026</span>
+            <h3>Diploma in Engineering</h3>
+            <p class="inst">Dhaka Government Polytechnic Institute</p>
+            <p>Refrigeration & Air Conditioning Technology<br>
+            Session: 2022-23 | Expected Passing Year: 2026</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="year">2020 – 2022</span>
+            <h3>Secondary School Certificate (SSC)</h3>
+            <p class="inst">Dinajpur Government Technical School and College</p>
+            <p>Refrigeration & Air Conditioning Technology<br>
+            Session: 2020 | Passing Year: 2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-head">
+        <h2>Experience & <span>Projects</span></h2>
+        <p>Practical exposure and ongoing work</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="year">Internship – 3 Months</span>
+            <h3>Intern – RAC Technician</h3>
+            <p class="inst">R4S Technical Solutions Ltd.</p>
+            <p>26A/C, 1st Colony, Mazar Road, Darussalam, Mirpur-1, Dhaka-1216, Bangladesh<br>
+            Hands-on experience in refrigeration and air conditioning systems installation, servicing and maintenance.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="year">Ongoing</span>
+            <h3>7th Semester RAC Project</h3>
+            <p class="inst">Academic Project</p>
+            <p>Working on practical RAC project as part of diploma curriculum, focusing on system design and implementation.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="year">Practical Work</span>
+            <h3>Inverter AC Installation & Troubleshooting</h3>
+            <p class="inst">Field Experience</p>
+            <p>Successfully completed multiple Inverter AC installations and Non-inverter AC troubleshooting & repair jobs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-head">
+        <h2>Services</h2>
+        <p>What I can help you with</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-snowflake"></i></div>
+          <h3>Refrigeration & Air Conditioning</h3>
+          <p>Installation, servicing, maintenance and troubleshooting of Split, VRF, Central AC and refrigeration systems.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Electrical Works</h3>
+          <p>Complete house wiring, electrical installations, load calculation and safety-compliant electrical solutions.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-microchip"></i></div>
+          <h3>Electronics Maintenance</h3>
+          <p>Diagnosis and repair of electronic control boards, sensors and related components used in HVAC systems.</p>
         </div>
       </div>
     </div>
@@ -447,9 +953,9 @@
     <div class="container">
       <div class="section-head">
         <h2>Get In <span>Touch</span></h2>
-        <p>Have a project in mind? Let's talk!</p>
+        <p>Have a project or need a service? Let's talk!</p>
       </div>
-      <div class="contact-grid">
+      <div class="contact-wrapper">
         <div class="contact-links">
           <a href="https://www.facebook.com/SumonOfficialPlus" target="_blank" rel="noopener">
             <div class="c-icon fb"><i class="fab fa-facebook-f"></i></div>
@@ -461,19 +967,79 @@
           </a>
           <a href="https://wa.me/8801307352309" target="_blank" rel="noopener">
             <div class="c-icon wa"><i class="fab fa-whatsapp"></i></div>
-            <div><h4>WhatsApp</h4><p>01307352309</p></div>
+            <div><h4>WhatsApp</h4><p>01307-352309</p></div>
+          </a>
+          <a href="https://t.me/Sumon_Official_ID" target="_blank" rel="noopener">
+            <div class="c-icon tg"><i class="fab fa-telegram-plane"></i></div>
+            <div><h4>Telegram</h4><p>@Sumon_Official_ID</p></div>
           </a>
           <a href="mailto:sumonislam307352309@gmail.com">
             <div class="c-icon mail"><i class="fas fa-envelope"></i></div>
             <div><h4>Email</h4><p>sumonislam307352309@gmail.com</p></div>
           </a>
         </div>
+
+        <!-- Form Trigger (shown by default) -->
+        <div class="form-trigger" id="formTrigger">
+          <div class="trigger-icon"><i class="fas fa-paper-plane"></i></div>
+          <h3>Send a Message</h3>
+          <p>Have a project or need a service?<br>Click below to open the contact form.</p>
+          <button class="open-btn" id="openFormBtn">
+            Open Form <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Actual Form (hidden by default) -->
+        <div class="contact-form-box" id="contactFormBox">
+          <div class="form-header">
+            <div>
+              <h3>Send a Message</h3>
+              <p>Select a service and fill the form — I'll get back to you soon.</p>
+            </div>
+            <button class="close-form" id="closeFormBtn" aria-label="Close form">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <form action="https://formspree.io/f/xyeejvya" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="01XXXXXXXXX" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="service">Select Service</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Choose a service...</option>
+                <option value="Refrigeration & Air Conditioning">Refrigeration & Air Conditioning</option>
+                <option value="Electrical Works">Electrical Works</option>
+                <option value="Electronics Maintenance">Electronics Maintenance</option>
+                <option value="Other / General Inquiry">Other / General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" required placeholder="Describe your requirement..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2026 <a href="#">Md Sumon Islam</a>. All rights reserved.</p>
+    <p>© 2026 <a href="#">Md. Sumon Islam</a>. All rights reserved.</p>
   </footer>
 
   <script>
@@ -499,6 +1065,27 @@
         a.classList.toggle('active', a.getAttribute('href') === '#' + current);
       });
     });
+
+    // Contact Form Toggle
+    const formTrigger = document.getElementById('formTrigger');
+    const contactFormBox = document.getElementById('contactFormBox');
+    const openFormBtn = document.getElementById('openFormBtn');
+    const closeFormBtn = document.getElementById('closeFormBtn');
+
+    function openForm() {
+      formTrigger.style.display = 'none';
+      contactFormBox.classList.add('active');
+    }
+    function closeForm() {
+      contactFormBox.classList.remove('active');
+      formTrigger.style.display = 'block';
+    }
+
+    openFormBtn.addEventListener('click', openForm);
+    formTrigger.addEventListener('click', (e) => {
+      if (e.target.closest('.open-btn') || e.target === formTrigger) openForm();
+    });
+    closeFormBtn.addEventListener('click', closeForm);
   </script>
 </body>
 </html>
